@@ -1,6 +1,11 @@
 /* reset */
 
-*/ * {
+:root {
+    --color-primary: #14aaf5;
+    --color-purple: #ab5de6;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -67,11 +72,22 @@ main {
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
+    cursor: pointer
+}
 
+.btn:hover {
+    background-color: #101011;
+    color: #ffffff;
+}
+
+.btn:hover+.box {
+    /* display: none; */
+    /* visibility: hidden; */
+    opacity: 0;
 }
 
 .btn-filled {
-    background-color: #47ADF1;
+    background-color: var(--color-primary);
     color: #ffffff;
 }
 
@@ -81,6 +97,7 @@ main {
     color: #c4cbd0;
 }
 
+/* 
 .circle {
     display: inline-block;
     width: 20px;
@@ -98,4 +115,47 @@ main {
 .delete {
     color: green;
     border: 1px solid green;
+} */
+
+/* li.red {
+    color: red;
+}
+
+input[type="password"] {
+    color: red;
+} */
+
+/* li:hover>span.circle {
+    background-color: black;
+} */
+
+li.circle:before {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+    font-size: 12px;
+    line-height: 20px;
+    /* centratura verticale */
+}
+
+li.circle.checked:before {
+    content: '\2713';
+    border: 1px solid #2cc6ab;
+    color: #2cc6ab;
+}
+
+li.circle.delete:before {
+    content: '\292B';
+    border: 1px solid #ff0000;
+    color: #ff0000;
+}
+
+.box {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: red;
 }
