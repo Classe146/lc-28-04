@@ -1,0 +1,101 @@
+/* reset */
+
+*/ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    padding: 10px 20px;
+}
+
+/* general */
+.debug {
+    border: 1px solid red;
+}
+
+body {
+    background-color: #F6F8F9;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    background-color: #ffffff;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+
+}
+
+/* header */
+header {
+    background-color: #ffffff;
+    padding: 15px 20px;
+}
+
+h1 {
+    display: inline;
+    font-size: 3em;
+    vertical-align: middle;
+}
+
+#logo img {
+    vertical-align: middle;
+}
+
+/* main */
+main {
+    padding: 30px 0;
+}
+
+.top {
+    border-bottom: 5px solid #F6F8F9;
+    padding: 15px 20px;
+}
+
+.tasks {
+    padding: 15px 20px;
+}
+
+.btn {
+
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.btn-filled {
+    background-color: #47ADF1;
+    color: #ffffff;
+}
+
+.btn-empty {
+    border: 1px solid #c4cbd0;
+    background-color: white;
+    color: #c4cbd0;
+}
+
+.circle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.checked {
+    color: red;
+    border: 1px solid red;
+}
+
+.delete {
+    color: green;
+    border: 1px solid green;
+}
